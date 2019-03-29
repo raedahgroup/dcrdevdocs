@@ -16,3 +16,4 @@ base58Preimage -- (checksumPreimage || checksum): 073fe280cb6e66b96679aec288b1fb
 address -- base58(base58Preimage): DsmcYVbP1Nmag2H4AS17UTvmWXmGeA7nLDx
 address: DsmcYVbP1Nmag2H4AS17UTvmWXmGeA7nLDx
 ```
+The prefix for mainnet addresses based on secp256k1 with ECDSA is here: https://github.com/decred/dcrd/blob/59ed4247a1d5816070852a332dcddff9322b9722/chaincfg/mainnetparams.go#L211
