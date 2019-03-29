@@ -36,3 +36,17 @@ CLI tool to call rpcs, but with some differences from dcrctl.
 It's not decred aware, and that allows you to make calls with arbitrary methods and args.
 Also supports websockets.
 
+Links
+
+https://faucet.decred.org/ usually can send you some testnet coins.
+https://docs.decred.org/wallets/cli/dcrctl-basics/
+https://testnet.dcrdata.org testnet explorer
+
+rpc docs
+
+https://docs.decred.org/wallets/cli/dcrctl-rpc-commands/
+https://github.com/decred/dcrwallet/tree/master/rpc/documentation
+https://github.com/decred/dcrwallet/blob/master/rpc/documentation/api.md
+
+reference implementations for pythons, nodejs, c#, etc   
+https://github.com/decred/dcrwallet/blob/master/rpc/documentation/clientusage.md
