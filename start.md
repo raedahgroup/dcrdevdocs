@@ -1,3 +1,13 @@
+Learning to Code
+
+https://gobyexample.com/
+That, https://golang.org/doc/effective_go.html, and digging into existing quality code such as that in dcrd is about all you need to get up to speed on Go.
+That is probably actually Go's greatest strength.  It is a super straight-foward language.
+Unfortunately, that can also be its weakness when you're a much more experience developer because it doesn't offer a lot more advanced things that make life easier such as immutability by default,
+zero-cost abstractions, and well-supported fp primitives.
+It's fantastic for readability though, and that is super important in a project like this.
+
+
 Mining
 
 There is only a single round of blake256 hashing required in Decred versus 2 in sha256 because blake does not have the vulnerabilities that require the double hashing.  Then there is the fact that the Decred header provides ample nonce space so it's not necessary to completely recalculate the merkle root every 2^32 nonces (which an ASIC blows through in a few microseconds).  The combined result is that it takes much less energy to find a solution for a given hash rate.
