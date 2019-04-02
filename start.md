@@ -1,4 +1,4 @@
-Learning to Code
+**Learning to Code**
 
 https://gobyexample.com/
 That, https://golang.org/doc/effective_go.html, and digging into existing quality code such as that in dcrd is about all you need to get up to speed on Go.
@@ -8,11 +8,11 @@ zero-cost abstractions, and well-supported fp primitives.
 It's fantastic for readability though, and that is super important in a project like this.
 
 
-Mining
+**Mining**
 
 There is only a single round of blake256 hashing required in Decred versus 2 in sha256 because blake does not have the vulnerabilities that require the double hashing.  Then there is the fact that the Decred header provides ample nonce space so it's not necessary to completely recalculate the merkle root every 2^32 nonces (which an ASIC blows through in a few microseconds).  The combined result is that it takes much less energy to find a solution for a given hash rate.
 
-Signatures
+**Signatures**
 
 Signature hash calculation for transaction signing: https://github.com/decred/dcrd/blob/59ed4247a1d5816070852a332dcddff9322b9722/txscript/sighash.go#L225-L448   It uses blake256r14.  The signature hash is then signed.  The most common (and thus compatible with Bitcoin) type is indeed secp256k1 with ECDSA. The address is blake256r14+ripemd160+base58, but has a prefix of 2 bytes as compared to BTC's one byte.  Here are the intermediate preimages to help with address costruction:
 ```
@@ -28,7 +28,7 @@ address: DsmcYVbP1Nmag2H4AS17UTvmWXmGeA7nLDx
 ```
 The prefix for mainnet addresses based on secp256k1 with ECDSA is here: https://github.com/decred/dcrd/blob/59ed4247a1d5816070852a332dcddff9322b9722/chaincfg/mainnetparams.go#L211
 
-Websockets
+**Websockets**
 
 https://github.com/jrick/wsrpc
 For working with the dcrd or dcrwallet json-rpc servers.
@@ -36,7 +36,7 @@ CLI tool to call rpcs, but with some differences from dcrctl.
 It's not decred aware, and that allows you to make calls with arbitrary methods and args.
 Also supports websockets.
 
-Links
+**Links**
 
 https://faucet.decred.org/ usually can send you some testnet coins.
 
@@ -61,7 +61,7 @@ reference implementations for pythons, nodejs, c#, etc
 https://github.com/decred/dcrwallet/blob/master/rpc/documentation/clientusage.md
 
 
-Premine
+**Premine**
 
 The justification for the airdrop went like this: it took several years of software dev FTE to get dcr to the point it could be launched, which had a real fiat cost. CS/C0 had spent quite a bit on btcsuite prior to dcr launch, which i did not think was fair to attempt to recoup in the initial premine. the total amount spent to do bringup on dcr was roughly USD 300K from C0, and devs earned USD 115K for sweat equity and direct buy in. we wanted to premine as little as possible to avoid giving the dev premine too many coins.
 
