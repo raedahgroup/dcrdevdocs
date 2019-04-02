@@ -59,3 +59,20 @@ https://github.com/decred/dcrdata#apis
 reference implementations for pythons, nodejs, c#, etc   
 
 https://github.com/decred/dcrwallet/blob/master/rpc/documentation/clientusage.md
+
+
+Premine
+
+The justification for the airdrop went like this: it took several years of software dev FTE to get dcr to the point it could be launched, which had a real fiat cost. CS/C0 had spent quite a bit on btcsuite prior to dcr launch, which i did not think was fair to attempt to recoup in the initial premine. the total amount spent to do bringup on dcr was roughly USD 300K from C0, and devs earned USD 115K for sweat equity and direct buy in. we wanted to premine as little as possible to avoid giving the dev premine too many coins.
+
+We put the figure for a maximum of the premine at 10% (2.1M dcr) and worked backwards from that. we wanted for the dev/airdrop split to be more like 40/60, but the staking system dictated that we needed to 50/50 split to ensure nobody could kill the chain early on
+
+Further, some of that 4% that went to the dev premine had to be staked to be certain nobody could easily attack the chain
+
+We were able to cut it from 10% to 8% by estimating a value of USD 0.49 per dcr
+Bitcoin is special b/c nobody knew that btc was going to get big back then, so there is an effective premine of 1M btc. whether it ever gets spent - who knows.
+  
+With PoS you need an "initial set of stakers" as you cannot stake with 0 coins. If miners=stakers it wouldn't create diversity among stakeholders. Hence the airdrop to the community/contributors to create the initial group of stakers. This made it possible to start with a multi-stakeholder situation. 
+
+Trying to compare pow and pow/pos launches is hard b/c no pos component changes the consensus algorithm in a major way with pos, if someone buys up all the coins and just doesn't participate in the pos system, the chain could die airdrop created interest amongst a lot of ppl. ~2900 ppl registered. If you got your 282 dcr airdrop and just staked it all continuously, you'd have 1500+ dcr right now
+
