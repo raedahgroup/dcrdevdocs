@@ -76,3 +76,5 @@ With PoS you need an "initial set of stakers" as you cannot stake with 0 coins. 
 
 Trying to compare pow and pow/pos launches is hard b/c no pos component changes the consensus algorithm in a major way with pos, if someone buys up all the coins and just doesn't participate in the pos system, the chain could die airdrop created interest amongst a lot of ppl. ~2900 ppl registered. If you got your 282 dcr airdrop and just staked it all continuously, you'd have 1500+ dcr right now
 
+People had to confirm their emails, we vetted the list manually for fraud and various games. There were some pretty creative games played by malicious actors.
+
