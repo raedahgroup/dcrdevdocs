@@ -28,6 +28,21 @@ address: DsmcYVbP1Nmag2H4AS17UTvmWXmGeA7nLDx
 ```
 The prefix for mainnet addresses based on secp256k1 with ECDSA is here: https://github.com/decred/dcrd/blob/59ed4247a1d5816070852a332dcddff9322b9722/chaincfg/mainnetparams.go#L211
 
+**Lottery**
+
+https://github.com/decred/dcrd/blob/master/blockchain/stake/lottery.go
+
+t uses a deterministic PRNG based on blake256 hashes that is seeded with the serialization of the header of the block that is being voted on suffixed with a constant derived from the hex representation of Pi which acts as a publicly verifiable NUMS number. From there, all of the eligible tickets (also referred to as live tickets) are sorted lexicographically by their hash to generate a total order. Finally, uniformly random values are produced (which obviously means it uses the total number number of eligible tickets as an upper bound to be able to properly produce them) and used as indices into the total order.
+
+If you're comfortable looking at code, this test harness code is pretty well documented and makes it clear what's going on. The aforementioned NUMS constant is defined here.
+
+https://github.com/decred/dcrd/blob/e9b2b4854f6e9f70907477a4cf689c1bcfbab327/blockchain/chaingen/generator.go#L1092-L1224
+
+https://github.com/decred/dcrd/blob/e9b2b4854f6e9f70907477a4cf689c1bcfbab327/blockchain/chaingen/generator.go#L25-L29
+
+matheus covered it in a video as well: https://www.youtube.com/watch?v=eysGWVhDFWY
+
+
 **Websockets**
 
 https://github.com/jrick/wsrpc
@@ -59,6 +74,10 @@ https://github.com/decred/dcrdata#apis
 reference implementations for pythons, nodejs, c#, etc   
 
 https://github.com/decred/dcrwallet/blob/master/rpc/documentation/clientusage.md
+
+Decred Change Proposals (DCPs).
+
+https://github.com/decred/dcps
 
 
 **Premine**
