@@ -97,3 +97,8 @@ Trying to compare pow and pow/pos launches is hard b/c no pos component changes 
 
 People had to confirm their emails, we vetted the list manually for fraud and various games. There were some pretty creative games played by malicious actors.
 
+Premine code
+https://github.com/decred/dcrd/blob/master/chaincfg/params.go#L478-L481
+https://github.com/decred/dcrd/blob/47ade78c1a4e350313e9b5d9f5556f707ad22d0d/chaincfg/premine.go#L10
+
+
