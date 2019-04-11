@@ -1,4 +1,5 @@
 **On 51% attacks**
+
 In a pure PoS or PoW system once someone has 51% control they are in control forever.
 In Decred, or any other hybrid PoW/PoS that is setup to dilute influence that is not the case.
 All you have to do is think about how many tickets you could buy with  your coins a year ago versus now.  Assuming you were staking the same amount of coins then as now, your influence is most definitely less now than it
