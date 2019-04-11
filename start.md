@@ -9,6 +9,27 @@ That would be me. What is the percentage for POS "total control" ? Ie.On average
 It's a curve that also depends on the PoW. The crux of it is that there isn't a single number.
 https://medium.com/decred/decreds-hybrid-protocol-a-superior-deterrent-to-majority-attacks-9421bf486292
 Scroll down to proof.  One key observation is "If an attacker has around 50% of the stake/tickets, they would also need 1 times (100%) the honest hashpower."  Notice that at 51% is still near 100% hash power needed.
+Assuming you could buy 12k DR5 units from Bitmain (you can't) it would set you back around USD $16M.
+Then you need to fight it out in two other markets, the DCR market and the ticket market which both have constrained liquidity.
+50% of the tickets represents USD $54M of DCR, but if you had to buy 2M DCR in the open market I would expect it to cost many multiples of that, and then you need to bid up the tickets, that's where the sdiff algo will
+send you back to buy more DCR in short order as ticket price ratchets up.
+I didn't calculate that 12k DR5, but if you're just taking the current hashpower and divdiing by the hash rate of a DR5, keep in mind that isn't correct because you are doubling the hash power in the process which means you only have 50%, not 100%.
+Keeping the numbers easy, assume a global hash rate of 100PH/s.  If you buy 100PH/s, there is now 200PH/s.  So 100 / 200 = 50%. 
+12k DR5 is about equal to current total hash power I believe.
+Well, let's see.  A DR5 is ~34TH/s. From block difficulty: 460.41 PH/s. From last 120 blocks:  428.81 PH/s
+We'll go with the lower value of ~429000 TH/s.  429000 / 34 ~= 12618.  So yeah, that's what I figured.
+So to summarize ... That argument only holds up to pure POS and not decred.
+Yes, it's true in pure PoS.
+Someone needs both pow and POS super majority to keep others from taking back control .
+I don't see how you can prevent control from being regained. I can bid up hash and tickets too.
+Pure PoS with no other factors in play as well, since it's not impossible to devise a scheme such that there is some form of relative influence dilution there either, although it is much more difficult to do that securely,
+and, in fact, there is, as far as I know, no currently known way to solve the security proof for it.
+The minority will eventually get a run of blocks that undoes everything the majority was trying to do at a rate of 4x.
+Right 20 tickets can be added and only 5 are coming out of the pool.
+You would really need to dominate the PoW side to mitigate that effect.
+Assuming you could even buy the ~12618 DR5s, doing so would double the hash rate from the current ~429k TH/s to ~858k TH/s, means that 429k TH/s you just bought puts you at 50%.  Same as the math above showed because it's a percentage.
+What if you bought, 2x the current hash rate?  429k * 3 = 1287k.   Then 858k / 1287k ~= 66%.  See the formula?  It's `n / (n+1)` where n is the ratio of the total hashpower being purchased.  e.g. n=1 is 1x the current
+hashpower.  n=2 is 2x the current hashpower, etc.  Now, we can solve for something high like say, 90% and find that you'd need to buy 9x the current hash rate to end up with 90%. Also see https://github.com/decred/dcrdata/issues/1022
 
 
 **Learning to Code**
