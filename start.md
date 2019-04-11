@@ -1,3 +1,15 @@
+**On 51% attacks**
+In a pure PoS or PoW system once someone has 51% control they are in control forever.
+In Decred, or any other hybrid PoW/PoS that is setup to dilute influence that is not the case.
+All you have to do is think about how many tickets you could buy with  your coins a year ago versus now.  Assuming you were staking the same amount of coins then as now, your influence is most definitely less now than it
+was then, so even if you, perhaps, had 51% a year ago, you definitely wouldn't now.
+Furthermore, 51% stake alone is not enough to "be in control".  Whoever made that argument needs to spend a little more time digging into the math behind it.
+That would be me. What is the percentage for POS "total control" ? Ie.On average 3 out of 5 tickets in ticket pool  are yours. So that would be 60% ?
+It's a curve that also depends on the PoW. The crux of it is that there isn't a single number.
+https://medium.com/decred/decreds-hybrid-protocol-a-superior-deterrent-to-majority-attacks-9421bf486292
+Scroll down to proof.  One key observation is "If an attacker has around 50% of the stake/tickets, they would also need 1 times (100%) the honest hashpower."  Notice that at 51% is still near 100% hash power needed.
+
+
 **Learning to Code**
 
 https://gobyexample.com/
