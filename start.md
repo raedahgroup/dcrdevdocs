@@ -173,3 +173,22 @@ Premine code:
 https://github.com/decred/dcrd/blob/master/chaincfg/params.go#L478-L481
 
 https://github.com/decred/dcrd/blob/47ade78c1a4e350313e9b5d9f5556f707ad22d0d/chaincfg/premine.go#L10
+
+## Scaling
+
+DCR General, 21 Apr 2019
+
+elian:
+
+How many transactions per second does decred can handle?
+"Decred mainnet has blocksize 384 KiB. Let's take a rough average tx size of 400 bytes and average block time of 5 min: 393216/400/5/60 = 3.2 transaction per second."
+
+haon:
+With LN in place, it will be nearly infinite tx per second. Decred is open to scaling in different ways (not just off-chain) however, it's not needed (yet)
+
+davecgh:
+
+The real answer is that Decred is effectively infinitely scalable due to the fact the consensus rules have a solid governance process in place that allows them to be changed as necessary.  The constitution places no artificial limitation on them which says they must be set in stone and can never change.  You might choose to question that answer, but it really is the correct one.  Anything that is thought to be perfectly scalable today might very well not actually be scalable tomorrow.  The real key to scalability is flexibility. There is no guarantee that the current internet infrastructure will even look anything like it does today 50 years from now.  An entirely new technology with vastly different properties could replace it. Anyone claiming that their _current rules_ are perfectly scalable are either naive or outright lying to you, because they can't possibly know what the future holds.  It must be possible to adapt the system as technology changes to have any chance of that being true.
+
+
+
