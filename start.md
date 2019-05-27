@@ -191,4 +191,10 @@ davecgh:
 The real answer is that Decred is effectively infinitely scalable due to the fact the consensus rules have a solid governance process in place that allows them to be changed as necessary.  The constitution places no artificial limitation on them which says they must be set in stone and can never change.  You might choose to question that answer, but it really is the correct one.  Anything that is thought to be perfectly scalable today might very well not actually be scalable tomorrow.  The real key to scalability is flexibility. There is no guarantee that the current internet infrastructure will even look anything like it does today 50 years from now.  An entirely new technology with vastly different properties could replace it. Anyone claiming that their _current rules_ are perfectly scalable are either naive or outright lying to you, because they can't possibly know what the future holds.  It must be possible to adapt the system as technology changes to have any chance of that being true.
 
 
+## Signature Hash
+Decred was desinged to not require segwit for the things that bitcoin needs it for.
+The "separate tx hashes depending on purpose" is how that is accomplished.
+https://github.com/decred/dcrd/blob/a68540fc9aff9a38fa62c05bae680e00ad70e0da/txscript/sighash.go#L225-L441
+
+
 
