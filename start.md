@@ -197,4 +197,12 @@ The "separate tx hashes depending on purpose" is how that is accomplished.
 https://github.com/decred/dcrd/blob/a68540fc9aff9a38fa62c05bae680e00ad70e0da/txscript/sighash.go#L225-L441
 
 
+## Block production times
+
+https://www.reddit.com/r/decred/comments/8dszhf/expected_versus_actual_block_production_times/
+
+davecgh | It's a Poisson process, so it's simply the PDF (technically PMF).  Further because it's the special case of one time in an interval, you can model it with the CDF for an exponential distribution.
+Wolfram alpha link: https://www.wolframalpha.com/input/?i=cdf+exponential+distribution+%CE%BB%3D1%2F300
+If you want to understand where all that comes from, see https://en.wikipedia.org/wiki/Poisson_distribution (note that lamba=1 and k=0 for block production), https://en.wikipedia.org/wiki/Probability_mass_function,
+         | https://en.wikipedia.org/wiki/Exponential_distribution, and https://en.wikipedia.org/wiki/Cumulative_distribution_function.
 
