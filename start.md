@@ -206,3 +206,7 @@ Wolfram alpha link: https://www.wolframalpha.com/input/?i=cdf+exponential+distri
 If you want to understand where all that comes from, see https://en.wikipedia.org/wiki/Poisson_distribution (note that lamba=1 and k=0 for block production), https://en.wikipedia.org/wiki/Probability_mass_function,
          | https://en.wikipedia.org/wiki/Exponential_distribution, and https://en.wikipedia.org/wiki/Cumulative_distribution_function.
 
+## TX Fee calculations
+
+https://github.com/decred/dcrwallet/blob/master/wallet/txrules/rules.go#L71
+it calculates a fee based on the estimated size of the transaction once it is signed
