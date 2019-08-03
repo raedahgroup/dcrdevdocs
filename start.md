@@ -187,6 +187,15 @@ it calculates a fee based on the estimated size of the transaction once it is si
 So you'll want to look at https://godoc.org/github.com/decred/dcrd/hdkeychain, and the example https://godoc.org/github.com/decred/dcrd/hdkeychain#example-package--DefaultWalletLayout  for how it's deriving children.  The difference is you'll just use https://godoc.org/github.com/decred/dcrd/hdkeychain#NewKeyFromString on the public extended key for the account and derive the immediate children for it.
 Once you have a child, you turn it into an address, which is also shown in the example doco I linked.
 'dcrctl getmasterpubkey default'
+'dcrctl --wallet walletinfo | jq .cointype'
+
+https://github.com/decred/dcrwallet/blob/52c3adc96d9b38200f4ca5f5d49eff0395e7d20c/wallet/udb/addressmanager.go#L63
+
+https://github.com/decred/dcrwallet/issues/112
+
+address derivation examples here: https://github.com/dcrlabs/hdaddy/blob/master/derivation.go
+As far as the derivation path, just reference bip44 https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki
+jrick's tool let's your type in the path. https://github.com/jrick/hdkey
 
 ## Links
 
