@@ -184,6 +184,7 @@ If you want to understand where all that comes from, see https://en.wikipedia.or
 
 https://github.com/decred/dcrwallet/blob/master/wallet/txrules/rules.go#L71
 it calculates a fee based on the estimated size of the transaction once it is signed
+https://github.com/decred/dcrwallet/blob/master/wallet/internal/txsizes/size.go
 
 ## HD Keychain
 So you'll want to look at https://godoc.org/github.com/decred/dcrd/hdkeychain, and the example https://godoc.org/github.com/decred/dcrd/hdkeychain#example-package--DefaultWalletLayout  for how it's deriving children.  The difference is you'll just use https://godoc.org/github.com/decred/dcrd/hdkeychain#NewKeyFromString on the public extended key for the account and derive the immediate children for it.
