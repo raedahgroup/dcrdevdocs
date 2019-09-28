@@ -96,6 +96,15 @@ address: DsmcYVbP1Nmag2H4AS17UTvmWXmGeA7nLDx
 
 The prefix for mainnet addresses based on secp256k1 with ECDSA is here: https://github.com/decred/dcrd/blob/59ed4247a1d5816070852a332dcddff9322b9722/chaincfg/mainnetparams.go#L211
 
+## PoS Voting
+
+PoS voting needs to be a pseudorandom process to prevent gaming.
+So it becomes a question of how long the pseudorandom process takes, both on average and in a worst case.
+We figured an average of 1 month was about right - ~30 days with the ticket and vote maturities
+and we set the worst case time to ~4.7 months b/c we wanted to ensure that the vast majority of tickets would vote before expiring.
+By keeping these lockup times long, but not too long, we filter out short term rent seekers which aligns the incentives of the stakeholders with the network.
+jy-p
+
 ## Lottery
 
 (from reddit on [2019-04-02](https://www.reddit.com/r/decred/comments/b8k2i0/where_can_i_read_about_the_pseudo_random_number/))
