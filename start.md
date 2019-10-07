@@ -151,6 +151,10 @@ In many cases, we have worked backwards from a deliverable set we want to have t
 
 People had to confirm their emails, we vetted the list manually for fraud and various games. There were some pretty creative games played by malicious actors.
 
+chat 10-7-2019, jy-p
+We wanted it 10% or under, we figured out that the best skew towards the airdrop we could do while ensuring the network couldn't be killed was 50/50, we needed to have a reasonable exchange rate for the dev premine coins. 8% of 21M gave 1.68M, 50% of that was 840K, total cost to do bringup to launch + opt-in from individual devs was USD 415K giving roughly DCR/USD of roughly 0.49, which we felt was fair considering the markets at the time.
+
+
 Premine code:
 
 https://github.com/decred/dcrd/blob/master/chaincfg/params.go#L478-L481
