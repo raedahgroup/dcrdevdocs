@@ -105,6 +105,10 @@ and we set the worst case time to ~4.7 months b/c we wanted to ensure that the v
 By keeping these lockup times long, but not too long, we filter out short term rent seekers which aligns the incentives of the stakeholders with the network.
 jy-p
 
+split tx is specific to ticket purchasing. when you buy a ticket, it requires a specific amount of dcr, so ticketbuyer creates txs with one or more outputs of the amount needed to buy a ticket
+this was done to avoid the complexity of tracking change from ticket purchases since ticket purchases have an expiration and don't get mined with some regularity
+e.g. issue 10 sstxs close to end of sdiff interval and there's a chance some of them won't get mined
+
 ## Lottery
 
 (from reddit on [2019-04-02](https://www.reddit.com/r/decred/comments/b8k2i0/where_can_i_read_about_the_pseudo_random_number/))
