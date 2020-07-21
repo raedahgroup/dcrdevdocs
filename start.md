@@ -96,6 +96,13 @@ address: DsmcYVbP1Nmag2H4AS17UTvmWXmGeA7nLDx
 
 The prefix for mainnet addresses based on secp256k1 with ECDSA is here: https://github.com/decred/dcrd/blob/59ed4247a1d5816070852a332dcddff9322b9722/chaincfg/mainnetparams.go#L211
 
+## OP Codes
+
+its roughly the same as bitcoin script https://en.bitcoin.it/wiki/Script
+
+You can see a map of all of the opcodes to their handlers here: https://github.com/decred/dcrd/blob/a1630f5af99334b64a09ff57476bf6afc801c3e6/txscript/opcode.go#L314-L599
+Every handler is commented with the semantics including the data stack transformation(s).  You can click on each handler and go to its definition there on GitHub. 
+
 ## PoS Voting
 
 PoS voting needs to be a pseudorandom process to prevent gaming.
