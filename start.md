@@ -228,6 +228,10 @@ address derivation examples here: https://github.com/dcrlabs/hdaddy/blob/master/
 As far as the derivation path, just reference bip44 https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki
 jrick's tool let's your type in the path. https://github.com/jrick/hdkey
 
+## Mixing
+
+Mix sizes https://github.com/decred/dcrwallet/blob/master/wallet/mixing.go#L27
+
 ## Links
 
 https://faucet.decred.org/ usually can send you some testnet coins.
