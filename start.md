@@ -116,6 +116,19 @@ split tx is specific to ticket purchasing. when you buy a ticket, it requires a 
 this was done to avoid the complexity of tracking change from ticket purchases since ticket purchases have an expiration and don't get mined with some regularity
 e.g. issue 10 sstxs close to end of sdiff interval and there's a chance some of them won't get mined
 
+There is no way to vote incorrectly. If they dont send the vote tx, the ticket gets revoked and is returned in full. The stakeholders doing the voting are the ones who decide yes or no on the vote. In practice, this choice would be done via the software based on criteria for the block..such as voting no on blocks that include 0 transactions. The power remains in the client side though for that critieria, and so is decentralized by the stakeholders. Think of it like additional policy enforced by the stakeholders over and above the normal required rules. All blocks have to follow the consensus rules for block criteria, and wouldn't get propagated by the network nodes if they were invalid. Stakeholder approval is an additional factor. https://dcrdata.decred.org/disapproved 
+
+Is there any realistic scenario today that would lead to disapproved block? I understand the 0 transaction block would be disapproved, but is that also in violation of PoW consensus?
+
+Its not in violation of any PoW consensus rules currently. It was a frequent occurrence in bitcoin when gpu based botnets were big. Any manipulative or greedy miner could do so. I believe some miners also did it to make their blocks smaller in order to propagate faster for the race condition.
+There are several possible cases where the feature can be used, and probably many more that have not yet been discovered. Another one is for stakeholders to push miners to upgrade their nodes by rejecting blocks that are below the latest block version.
+
+Keep in mind that there is a big difference between voting no and not voting. It's the not voting part that protects against secret/selfish mining and the like.
+Voting no, on the other hand, raedah is describing nicely.
+
+For most cases, any time miners try to be evil, stakeholders can disapprove and override. This shifts power from the miners and developers to the economic stakeholders in a quantitative way that is part of the consensus rules.
+
+
 ## Lottery
 
 (from reddit on [2019-04-02](https://www.reddit.com/r/decred/comments/b8k2i0/where_can_i_read_about_the_pseudo_random_number/))
