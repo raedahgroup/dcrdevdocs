@@ -10,6 +10,7 @@ re smart contracts, Id look in the direction of building offchain application sp
 Beyond the technical challenges of allowing the treasury to be staked while remaining under control of the stakeholders, which is substantial, it would immediately beg the question "how should it vote?"
 
 **Split Tickets**
+
 There is substantial opportunity cost to offer ifinitely scalable ticket splitting.
 
 https://pasteboard.co/JSJHHdY.png
