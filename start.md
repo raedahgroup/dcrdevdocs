@@ -74,6 +74,9 @@ Unfortunately, that can also be its weakness when you're a much more experienced
 
 There is only a single round of blake256 hashing required in Decred versus 2 in sha256 because blake does not have the vulnerabilities that require the double hashing. Then there is the fact that the Decred header provides ample nonce space so it's not necessary to completely recalculate the merkle root every 2^32 nonces (which an ASIC blows through in a few microseconds). The combined result is that it takes much less energy to find a solution for a given hash rate.
 
+https://www.reddit.com/r/decred/comments/7rp46d/why_blake256/dsymdky/
+https://www.reddit.com/r/decred/comments/7dedss/asics_or/dpx7ggq/
+
 ## Signatures
 
 (from chat on [2019-02-05](https://matrix.to/#/!dhHYPTtCtvPSUfTepT:decred.org/$154933621028906vRveM:decred.org))
